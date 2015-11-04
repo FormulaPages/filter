@@ -1,0 +1,22 @@
+{
+  "name": "formula-filter",
+  "version": "0.0.1",
+  "description": "FILTER function",
+  "main": "FILTER.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormulaPages/filter.git"
+  },
+  "author": "Peter Moresi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormulaPages/filter/issues"
+  },
+  "homepage": "https://github.com/FormulaPages/filter#readme",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
