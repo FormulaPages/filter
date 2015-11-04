@@ -22,14 +22,13 @@
       filters[_key - 1] = arguments[_key];
     }
 
-    // TBD: Need to filter range by filters.
-    // A filter may be either a function or an array of true/false values.
+    // A filter is an array of true/false values.
     // The filter may be for rows or for columns but not both.
     // A array filter may only filter a range that covers a single row or a single column.
 
     function makeFilter() {
       return function (value, index) {
-        return filters.reduce(function (previousValue, currentValue, filterIndex) {
+        return filters.reduce(function (previousValue, currentValue) {
           if (previousValue === false) {
             return false;
           } else if (previousValue === true) {
